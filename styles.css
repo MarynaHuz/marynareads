@@ -130,8 +130,8 @@ body {
 }
 
 .icon-button {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: radial-gradient(
@@ -144,7 +144,7 @@ body {
   justify-content: center;
   color: var(--accent-soft);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease,
     border-color 0.15s ease, background 0.15s ease;
 }
