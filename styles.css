@@ -1,209 +1,244 @@
 :root {
-    --bg-main: #020308;
-    --bg-card: #05070c;
-    --bg-card-top: #111018;
-    --accent: #f6a97f;
-    --accent-soft: #f5bb9c;
-    --text-main: #fdf5ef;
-    --text-muted: #c9c0ba;
-    --border-subtle: rgba(255, 255, 255, 0.08);
-    --shadow-strong: 0 24px 40px rgba(0, 0, 0, 0.8);
-    --radius-card: 28px;
+  --bg-main: #020308;
+  --bg-card: #05070c;
+  --bg-card-top: #111018;
+  --accent: #f6a97f;
+  --accent-soft: #f5bb9c;
+  --text-main: #fdf5ef;
+  --text-muted: #c9c0ba;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --shadow-strong: 0 24px 40px rgba(0, 0, 0, 0.8);
+  --radius-card: 28px;
 }
 
 /* Global reset */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "Segoe UI", sans-serif;
-    background: radial-gradient(circle at top, #151017 0, #020308 55%, #000 100%);
-    color: var(--text-main);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #151017 0, #020308 55%, #000 100%);
+  color: var(--text-main);
 }
 
 /* Mobile-first layout */
 .page {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 24px 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
 }
 
 /* Main card */
 .card {
-    width: 100%;
-    max-width: 430px;
-    background: linear-gradient(to bottom, var(--bg-card-top), var(--bg-card));
-    border-radius: var(--radius-card);
-    overflow: hidden;
-    border: 1px solid var(--border-subtle);
-    box-shadow: var(--shadow-strong);
+  width: 100%;
+  max-width: 430px;
+  background: linear-gradient(to bottom, var(--bg-card-top), var(--bg-card));
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-strong);
 }
 
 /* Hero image */
 .hero {
-    position: relative;
-    height: 260px;
-    overflow: hidden;
+  position: relative;
+  height: 260px;
+  overflow: hidden;
 }
 
 .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: saturate(1.15) contrast(1.05);
-    transform: scale(1.02);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.15) contrast(1.05);
+  transform: scale(1.02);
 }
 
 /* Dark fade at bottom of hero */
 .hero-fade {
-    position: absolute;
-    inset: auto 0 0 0;
-    height: 45%;
-    background: linear-gradient(to bottom, transparent, rgba(5, 7, 12, 0.95));
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 45%;
+  background: linear-gradient(to bottom, transparent, rgba(5, 7, 12, 0.95));
 }
 
 /* Corner badges */
 .badge {
-    position: absolute;
-    top: 14px;
-    width: 34px;
-    height: 34px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    background: rgba(3, 5, 9, 0.68);
-    backdrop-filter: blur(10px);
-    color: var(--accent-soft);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    cursor: default;
+  position: absolute;
+  top: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(3, 5, 9, 0.68);
+  backdrop-filter: blur(10px);
+  color: var(--accent-soft);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: default;
 }
 
 .badge-left {
-    left: 14px;
+  left: 14px;
 }
 
 .badge-right {
-    right: 14px;
-    color: var(--text-main);
+  right: 14px;
+  color: var(--text-main);
 }
 
 /* Profile section */
 .profile {
-    padding: 18px 20px 10px;
-    text-align: center;
+  padding: 18px 20px 10px;
+  text-align: center;
 }
 
 .name {
-    font-size: 1.9rem;
-    letter-spacing: 0.02em;
-    color: var(--accent-soft);
-    margin-bottom: 4px;
+  font-size: 1.9rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-soft);
+  margin-bottom: 4px;
 }
 
 .tagline {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.5;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
 
 /* Social icons */
 .social-row {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 16px;
 }
 
 .icon-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    background: radial-gradient(circle at 30% 0, rgba(246, 169, 127, 0.22), rgba(4, 7, 12, 0.9));
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-soft);
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: transform 0.15s ease, box-shadow 0.15s ease,
-        border-color 0.15s ease, background 0.15s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: radial-gradient(
+    circle at 30% 0,
+    rgba(246, 169, 127, 0.22),
+    rgba(4, 7, 12, 0.9)
+  );
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-soft);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease, background 0.15s ease;
 }
 
 .icon-button:active {
-    transform: scale(0.94);
-    box-shadow: 0 0 0 1px rgba(246, 169, 127, 0.5);
+  transform: scale(0.94);
+  box-shadow: 0 0 0 1px rgba(246, 169, 127, 0.5);
 }
 
-/* Link buttons */
 .links {
-    padding: 8px 14px 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  padding: 8px 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
+/* Linktree-style buttons */
 .link-button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 13px 16px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    background:
-        linear-gradient(135deg, rgba(246, 169, 127, 0.18), rgba(8, 10, 16, 0.95))
-        border-box;
+    padding: 16px 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(246, 169, 127, 0.55);
+
+    background: linear-gradient(
+        145deg,
+        #3a2a22 0%,
+        #0b0f14 45%,
+        #05070c 100%
+    );
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
     color: var(--text-main);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.96rem;
     letter-spacing: 0.01em;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-    transition: transform 0.15s ease, box-shadow 0.15s ease,
-        border-color 0.15s ease, background 0.15s ease;
+
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.75);
+
+    transition: transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.15s ease,
+        background 0.15s ease;
 }
 
-.link-button i {
-    font-size: 0.9rem;
-    opacity: 0.8;
+/* left invisible spacer, same width as icon so label is perfectly centered */
+.link-spacer {
+  width: 18px;
+  flex-shrink: 0;
 }
 
-/* Tap feedback – works fine on mobile and subtle on desktop */
+/* centered label */
+.link-label {
+  flex: 1;
+  text-align: center;
+}
+
+/* three-dot icon on the right */
+.link-icon-dots {
+  width: 18px;
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.link-icon-dots i {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* tap feedback */
 .link-button:active {
-    transform: translateY(1px) scale(0.98);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  transform: translateY(1px) scale(0.985);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
 }
 
 /* Footer */
 .footer {
-    padding: 4px 18px 16px;
-    text-align: center;
-    font-size: 0.75rem;
-    color: rgba(201, 192, 186, 0.75);
+  padding: 4px 18px 16px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(201, 192, 186, 0.75);
 }
 
 /* Slightly nicer spacing on larger screens without changing the mobile layout */
 @media (min-width: 600px) {
-    .page {
-        align-items: center;
-    }
+  .page {
+    align-items: center;
+  }
 
-    .card {
-        max-width: 450px;
-    }
+  .card {
+    max-width: 450px;
+  }
 }
