@@ -2,7 +2,7 @@
   --bg-main: #020308;
   --bg-card: #05070c;
   --bg-card-top: #111018;
-  --accent: #BB8773;
+  --accent: #9b6956;
   --accent-soft: #C58C77;
   --text-main: #9b6956;
   --text-muted: #c9c0ba;
@@ -117,7 +117,7 @@ body {
 
 .tagline {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--text-main);
   line-height: 1.5;
 }
 
