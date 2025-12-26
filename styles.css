@@ -111,13 +111,13 @@ body {
 .name {
   font-size: 1.9rem;
   letter-spacing: 0.02em;
-  color: var(--accent-soft);
+  color: var(--text-main);
   margin-bottom: 4px;
 }
 
 .tagline {
   font-size: 0.9rem;
-  color: var(--text-main);
+  color: var(--accent-soft);
   line-height: 1.5;
 }
 
