@@ -121,6 +121,12 @@ body {
   line-height: 1.5;
 }
 
+.icon-accent {
+  color: var(--accent);
+  margin-right: 8px;
+  font-size: 1.05rem;   /* tune if needed */
+}
+
 /* Social icons */
 .social-row {
   display: flex;
