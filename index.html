@@ -1,52 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MarynaReads Links</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #111;
-      text-align: center;
-      padding: 30px;
-    }
-    .container {
-      max-width: 480px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    a {
-      display: block;
-      text-decoration: none;
-      background: #1a73e8;
-      color: white;
-      padding: 12px;
-      margin: 8px 0;
-      border-radius: 6px;
-      font-size: 1.1rem;
-    }
-    a:hover {
-      background: #1558b0;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>marynareads</title>
+
+    <meta name="theme-color" content="#05070c" />
+
+    <!-- Font Awesome for social icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>MarynaReads 📚</h1>
+<div class="page">
+    <main class="card">
+        <header class="hero">
+            <!-- Replace with your real image path in the repo -->
+            <img src="images/header-books.jpg" alt="Stacks of fantasy books" />
 
-    <a href="https://www.instagram.com/marynareads" target="_blank">Instagram</a>
-    <a href="https://www.goodreads.com/user/show/151715047-marynareads" target="_blank">Goodreads</a>
-    <a href="https://fable.co/marynareads-557093078760?referralID=gZA8sOu7bI" target="_blank">Fable Profile</a>
-    <a href="https://fable.co/club/whispers-of-elderwood-with-marynareads-244003220543" target="_blank">Fable Book Club</a>
-    <a href="https://www.tiktok.com/@marynareads" target="_blank">TikTok</a>
-    <a href="https://www.threads.com/@marynareads" target="_blank">Threads</a>
-    <a href="https://www.pinterest.com/marynareadsbooks" target="_blank">Pinterest</a>
+            <button class="badge badge-left" aria-label="Featured">
+                ✺
+            </button>
 
-  </div>
+            <button class="badge badge-right" aria-label="Share">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </button>
+
+            <div class="hero-fade"></div>
+        </header>
+
+        <section class="profile">
+            <h1 class="name">marynareads</h1>
+            <p class="tagline">📚 Fantasy Reader | Book Collector</p>
+            <p class="tagline">📖 Recs &amp; spoiler-free reviews!</p>
+
+            <div class="social-row">
+                <a href="https://www.instagram.com/marynareads"
+                   class="icon-button"
+                   aria-label="Instagram"
+                   target="_blank"
+                   rel="noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.goodreads.com/user/show/151715047-marynareads"
+                   class="icon-button"
+                   aria-label="Goodreads"
+                   target="_blank"
+                   rel="noreferrer">
+                    <i class="fa-brands fa-goodreads"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@marynareads"
+                   class="icon-button"
+                   aria-label="TikTok"
+                   target="_blank"
+                   rel="noreferrer">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="https://www.threads.com/@marynareads"
+                   class="icon-button"
+                   aria-label="Threads"
+                   target="_blank"
+                   rel="noreferrer">
+                    <i class="fa-brands fa-threads"></i>
+                </a>
+
+                <a href="https://www.pinterest.com/marynareadsbooks"
+                   class="icon-button"
+                   aria-label="Pinterest"
+                   target="_blank"
+                   rel="noreferrer">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="links">
+            <a class="link-button"
+               href="https://www.instagram.com/marynareads"
+               target="_blank"
+               rel="noreferrer">
+                <span>Instagram</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a class="link-button"
+               href="https://www.goodreads.com/user/show/151715047-marynareads"
+               target="_blank"
+               rel="noreferrer">
+                <span>Goodreads</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a class="link-button"
+               href="https://fable.co/marynareads-557093078760?referralID=gZA8sOu7bI"
+               target="_blank"
+               rel="noreferrer">
+                <span>Fable Profile</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a class="link-button"
+               href="https://fable.co/club/whispers-of-elderwood-with-marynareads-244003220543"
+               target="_blank"
+               rel="noreferrer">
+                <span>Fable Book Club</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a class="link-button"
+               href="https://www.tiktok.com/@marynareads"
+               target="_blank"
+               rel="noreferrer">
+                <span>TikTok</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a class="link-button"
+               href="https://www.threads.com/@marynareads"
+               target="_blank"
+               rel="noreferrer">
+                <span>Threads</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+
+            <a class="link-button"
+               href="https://www.pinterest.com/marynareadsbooks"
+               target="_blank"
+               rel="noreferrer">
+                <span>Pinterest</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Maryna Huz</p>
+        </footer>
+    </main>
+</div>
 </body>
 </html>
